@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+/* Inicio Navegación */
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+.nav__logo{
+    display: flex;
+    align-items: center;
+    margin-left: 5%; 
+}
+.nav__logo img{
+    max-width: 300px;
+}
+.nav__links{
+    display: flex;
+    justify-content: space-around;
+}
+.nav__links li{
+    list-style-type: none;
+    padding: 0 15px;
+}
+.nav__links li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* Fin Navegación */
+
+/* Index */
+
+/* Seccion Hero */
+.hero-index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("../images/topito.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    border-bottom: 1px solid white;
+}
+.hero-index img{
+    height: 30%;
+}
+.hero-index h2{
+    margin-top: 20px;
+    font-size: 25px;
+}
+/* Fin Seccion Hero */
+
+/* Seccion Deskpads */
+.seccion-deskpads{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 12px;
+    border-bottom: 1px solid white;
+}
+.seccion-deskpads__imagen{
+    background-image: url("../images/naaasaa.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    border: 1px solid white;
+}
+.seccion-deskpads__texto{
+    width: 30%;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.seccion-deskpads__texto h2{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.seccion-deskpads__texto p{
+    font-size: 1rem;
+}
+.seccion-deskpads__texto a{
+    padding: 10px 15px;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    margin-top: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+/* Fin Sección Deskpads */
+
+/* Sección Nosotros */
+.seccion-nosotros{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 12px;
+}
+.seccion-nosotros__imagen{
+    background-image: url("../images/teamwork.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    border: 1px solid white;
+}
+.seccion-nosotros__texto{
+    width: 30%;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.seccion-nosotros__texto h2{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.seccion-nosotros__texto p{
+    font-size: 1rem;
+}
+.seccion-nosotros__texto a{
+    padding: 10px 15px;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    background-color: white;
+    margin-top: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Fin Sección Nosotros */
+/* Fin Index */
+
+/* Deskpads */
+.hero-deskpads{
+    background-image: url("../images/deskpadss.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+}
+
+/* SECCION SHOP */
+.seccion-shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion-shop__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion-shop__text h2{
+    font-size: 3rem;
+}
+.seccion-shop__text p{
+    font-size: 1.5rem;
+}
+
+/* Cartas */
+.cards{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.deskpad-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 30px 30px 20px 30px;
+}
+.deskpad-card__contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.deskpad-card__img img{
+    width: 100%;
+}
+.deskpad-card__text{
+    margin-top: 2px;
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.deskpad-card button{
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 2px;
+}
+/* Fin Deskpads*/
+
+/* Nosotros */
+.hero-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    ), url("../images/otro-sprinkles.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 45vh;
+    border-bottom: 1px solid white;
+}
+.hero-nosotros h2{
+    margin-left: 250px;
+    font-size: 5rem;
+}
+
+/* Sección JK Deskpads */
+.seccion-jk-deskpads{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 12px;
+    border-bottom: 1px solid white;
+}
+.seccion-jk-deskpads__imagen{
+    background-image: url("../images/otro-topo.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    border: 1px solid white;
+}
+.seccion-jk-deskpads__texto{
+    width: 50%;
+    max-width: 30%;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seccion-jk-deskpads__texto h2{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.seccion-jk-deskpads__texto p{
+    font-size: 1rem;
+}
+
+/* Sección Historia */
+.seccion-historia{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 12px;
+}
+.seccion-historia__imagen{
+    background-image: url("../images/mdq.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    border: 1px solid white;
+}
+.seccion-historia__texto{
+    width: 50%;
+    max-width: 30%;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seccion-historia__texto h2{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.seccion-historia__texto p{
+    font-size: 1;
+}
+
+/* Seccion Dream Team */
+.seccion-dream-team{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 12px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.seccion-dream-team__imagen{
+    background-image: url("../images/compas.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    border: 1px solid white;
+}
+.seccion-dream-team__texto{
+    width: 50%;
+    max-width: 30%;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seccion-dream-team__texto h2{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.seccion-dream-team__texto p{
+    font-size: 1rem;
+}
+/* Fin Nosotros */
+
+/* Contacto */
+
+/* Sección Formulario */
+.seccion-formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("../images/rojito.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 80vh;
+}
+.seccion-formulario h1{
+    font-size: 4rem;
+    margin-right: 250px;
+}
+/* Formulario */
+.formulario{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* Formulario: Nombre */
+.formulario__nombre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.formulario__nombre label{
+    font-size: 1.8rem;
+}
+.formulario__nombre input{
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: none;
+}
+/* Formulario: Email */
+.formulario__email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.formulario__email label{
+    font-size: 1.8rem;
+}
+.formulario__email input{
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: none;
+}
+/* Formulario: Mensaje */
+.formulario__mensaje{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.formulario__mensaje label{
+    font-size: 1.8rem;
+}
+.formulario__mensaje textarea{
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+}
+/* Boton de Enviar */
+.formulario__boton input{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+/* Fin Formulario */
+/* Fin Contacto */
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid white;
+    height: 15vh;
+    overflow: hidden;
+}
+footer p{
+    font-size: 1.1rem;
+}
+.footer-logo img{
+    max-width: 300px;
+}
+/* Fin Footer */
+
+@media screen and (max-width: 800px) {
+    
+    /* Navegation */
+    .nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .nav__logo{
+        margin: 0;
+        padding-top: 20px;
+    }
+    .nav__links{
+        padding-bottom: 10px;
+    }
+    /* Sección Deskpads del Index */
+    .seccion-deskpads{
+        flex-direction: column;
+    }
+    .seccion-deskpads__imagen{
+        height: 500px;
+        width: 500px;
+    }
+    .seccion-deskpads__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .seccion-deskpads__texto h2{
+        margin-top: 20px;
+    }
+    .seccion-deskpads__texto p{
+        text-align: center;
+    }
+    /* Sección nosotros del Index */
+    .seccion-nosotros{
+        flex-direction: column;
+    }
+    .seccion-nosotros__imagen{
+        height: 500px;
+        width: 500px;
+    }
+    .seccion-nosotros__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .seccion-nosotros__texto h2{
+        margin-top: 20px;
+    }
+    .seccion-nosotros__texto p{
+        text-align: center;
+    }
+    /* Deskpads */
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80vw;
+    }
+    .deskpad-card button{
+        padding: 5px 8px;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+    .deskpad-card__text{
+        font-size: 1.1rem;
+    }
+
+    /* Nosotros */
+
+    .hero-nosotros h2{
+        font-size: 4rem;
+        margin-left: 60px;
+    }
+    .seccion-jk-deskpads{
+        flex-direction: column;
+    }
+    .seccion-jk-deskpads__imagen{
+        height: 500px;
+        width: 500px;
+    }
+    .seccion-jk-deskpads__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+    }
+    .seccion-jk-deskpads__texto h2{
+        margin-top: 20px;
+        width: 400px;
+        text-align: center;
+    }
+    .seccion-jk-deskpads__texto p{
+        text-align: center;
+        width: 400px;
+    }
+
+    .seccion-historia{
+        flex-direction: column;
+    }
+    .seccion-historia__imagen{
+        height: 500px;
+        width: 500px;
+    }
+    .seccion-historia__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+    }
+    .seccion-historia__texto h2{
+        margin-top: 20px;
+        width: 400px;
+        text-align: center;
+    }
+    .seccion-historia__texto p{
+        text-align: center;
+        width: 400px;
+    }
+
+    .seccion-dream-team{
+        flex-direction: column;
+    }
+    .seccion-dream-team__imagen{
+        height: 500px;
+        width: 500px;
+    }
+    .seccion-dream-team__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+    }
+    .seccion-dream-team__texto h2{
+        margin-top: 20px;
+        width: 400px;
+        text-align: center;
+    }
+    .seccion-dream-team__texto p{
+        text-align: center;
+        width: 400px;
+    }
+    /* Contacto */
+    .seccion-formulario{
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion-formulario h1{
+        font-size: 3rem;
+        margin: 0 0 30px 0;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    /* Navegación */
+    .nav__links li a{
+        font-size: 0.8rem;
+    }
+    .nav__logo img{
+        max-width: 250px;
+    }
+    /* Sección Deskpads del Index */
+    .seccion-deskpads__imagen{
+        height: 350px;
+        width: 350px;
+    }
+    .seccion-deskpads__texto h2{
+        font-size: 2.5rem;
+    }
+    .seccion-deskpads__texto{
+        width: 70%;
+    }
+
+    /* Sección Nosotros del Index */
+    .seccion-nosotros__imagen{
+        height: 350px;
+        width: 350px;
+    }
+    .seccion-nosotros__texto h2{
+        font-size: 2.5rem;
+    }
+    .seccion-nosotros__texto{
+        width: 70%;
+    }
+    /* Deskpads */
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    /* Nosotros */
+    .hero-nosotros h2{
+        font-size: 3rem;
+        margin-left: 40px;
+    }
+    /* JK Deskpads */
+    .seccion-jk-deskpads__imagen{
+        height: 350px;
+        width: 350px;
+    }
+    .seccion-jk-deskpads__texto h2{
+        font-size: 2.5rem;
+    }
+    .seccion-jk-deskpads__texto{
+        width: 70%;
+    }
+    /* Historia */
+    .seccion-historia__imagen{
+        height: 350px;
+        width: 350px;
+    }
+    .seccion-historia__texto h2{
+        font-size: 2.5rem;
+    }
+    .seccion-historia__texto{
+        width: 70%;
+    }
+    /* Dream Team */
+    .seccion-dream-team__imagen{
+        height: 350px;
+        width: 350px;
+    }
+    .seccion-dream-team__texto h2{
+        font-size: 2.5rem;
+    }
+    .seccion-dream-team__texto{
+        width: 70%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
