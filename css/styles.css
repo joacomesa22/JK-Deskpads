@@ -26,6 +26,10 @@ body{
 }
 .nav__logo img{
     max-width: 300px;
+    transition: transform 0.3s;
+}
+.nav__logo img:hover{
+    transform: scale(1.1);
 }
 .nav__links{
     display: flex;
@@ -40,6 +44,9 @@ body{
     font-size: 1.2rem;
     color: #fff;
     text-transform: uppercase;
+}
+.nav__links li a:hover{
+    border-bottom: 2px solid #fff;
 }
 /* Fin Navegación */
 
@@ -89,6 +96,10 @@ body{
     height: 600px;
     width: 600px;
     border: 1px solid white;
+    transition: transform 0.3s;
+}
+.seccion-deskpads__imagen:hover{
+    transform: scale(1.1);
 }
 .seccion-deskpads__texto{
     width: 30%;
@@ -114,6 +125,13 @@ body{
     margin-top: 25px;
     text-decoration: none;
     text-align: center;
+    transition: transform 0.3s;
+}
+.seccion-deskpads__texto a:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transform: scale(1.1);
 }
 /* Fin Sección Deskpads */
 
@@ -133,6 +151,10 @@ body{
     height: 600px;
     width: 600px;
     border: 1px solid white;
+    transition: transform 0.3s;
+}
+.seccion-nosotros__imagen:hover{
+    transform: scale(1.1);
 }
 .seccion-nosotros__texto{
     width: 30%;
@@ -159,6 +181,13 @@ body{
     margin-top: 25px;
     text-decoration: none;
     text-align: center;
+    transition: transform 0.3s;
+}
+.seccion-nosotros__texto a:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transform: scale(1.1);
 }
 
 /* Fin Sección Nosotros */
@@ -208,6 +237,10 @@ body{
     border: 1px solid white;
     border-radius: 30px;
     padding: 30px 30px 20px 30px;
+    transition: transform 0.3s;
+}
+.deskpad-card:hover{
+    transform: translateY(-10px);
 }
 .deskpad-card__contenedor{
     display: flex;
@@ -224,7 +257,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.deskpad-card button{
+.deskpad-card a{
     padding: 5px 15px;
     font-size: 1rem;
     border-radius: 10px;
@@ -233,6 +266,14 @@ body{
     background-color: transparent;
     cursor: pointer;
     margin-top: 2px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+.deskpad-card a:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transform: scale(1.1);
 }
 /* Fin Deskpads*/
 
@@ -273,6 +314,10 @@ body{
     height: 600px;
     width: 600px;
     border: 1px solid white;
+    transition: transform 0.3s;
+}
+.seccion-jk-deskpads__imagen:hover{
+    transform: scale(1.1);
 }
 .seccion-jk-deskpads__texto{
     width: 50%;
@@ -307,6 +352,10 @@ body{
     height: 600px;
     width: 600px;
     border: 1px solid white;
+    transition: transform 0.3s;
+}
+.seccion-historia__imagen:hover{
+    transform: scale(1.1);
 }
 .seccion-historia__texto{
     width: 50%;
@@ -337,11 +386,15 @@ body{
 .seccion-dream-team__imagen{
     background-image: url("../images/compas.png");
     background-size: cover;
-    background-position: center center;
+    background-position: center right;
     background-repeat: no-repeat;
     height: 600px;
     width: 600px;
     border: 1px solid white;
+    transition: transform 0.3s;
+}
+.seccion-dream-team__imagen:hover{
+    transform: scale(1.1);
 }
 .seccion-dream-team__texto{
     width: 50%;
@@ -442,6 +495,13 @@ body{
     border: none;
     border-radius: 30px;
     margin-top: 10px;
+    transition: transform 0.3s;
+}
+.formulario__boton input:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transform: scale(1.1);
 }
 /* Fin Formulario */
 /* Fin Contacto */
@@ -460,6 +520,10 @@ footer p{
 }
 .footer-logo img{
     max-width: 300px;
+    transition: transform 0.3s;
+}
+.footer-logo img:hover{
+    transform: scale(1.1)
 }
 /* Fin Footer */
 
@@ -623,7 +687,6 @@ footer p{
         font-size: 3rem;
         margin: 0 0 30px 0;
     }
-
 }
 @media screen and (max-width: 500px) {
     /* Navegación */
