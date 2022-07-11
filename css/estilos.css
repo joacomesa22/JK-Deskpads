@@ -414,10 +414,10 @@ body{
 }
 /* Fin Nosotros */
 
-/* Contacto */
+/* Contacto (¡¡¡¡¡PASADO A SASS!!!!!)*/
 
 /* Sección Formulario */
-.seccion-formulario{
+/* .seccion-formulario{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -435,16 +435,16 @@ body{
 .seccion-formulario h1{
     font-size: 4rem;
     margin-right: 250px;
-}
+} */
 /* Formulario */
-.formulario{
+/* .formulario{
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
+} */
 /* Formulario: Nombre */
-.formulario__nombre{
+/* .formulario__nombre{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -456,9 +456,9 @@ body{
     padding: 8px 15px;
     border-radius: 30px;
     border: none;
-}
+} */
 /* Formulario: Email */
-.formulario__email{
+/* .formulario__email{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -471,9 +471,9 @@ body{
     padding: 8px 15px;
     border-radius: 30px;
     border: none;
-}
+} */
 /* Formulario: Mensaje */
-.formulario__mensaje{
+/* .formulario__mensaje{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -486,9 +486,9 @@ body{
     border-radius: 10px;
     border: none;
     resize: none;
-}
+} */
 /* Boton de Enviar */
-.formulario__boton input{
+/* .formulario__boton input{
     padding: 10px 20px;
     cursor: pointer;
     background-color: white;
@@ -502,7 +502,7 @@ body{
     color: #fff;
     border: 1px solid #fff;
     transform: scale(1.1);
-}
+} */
 /* Fin Formulario */
 /* Fin Contacto */
 
@@ -678,15 +678,15 @@ footer p{
         text-align: center;
         width: 400px;
     }
-    /* Contacto */
-    .seccion-formulario{
+    /* Contacto (¡¡¡¡¡PASADO A SASS!!!!!)*/
+    /* .seccion-formulario{
         flex-direction: column;
         align-items: center;
     }
     .seccion-formulario h1{
         font-size: 3rem;
         margin: 0 0 30px 0;
-    }
+    } */
 }
 @media screen and (max-width: 500px) {
     /* Navegación */

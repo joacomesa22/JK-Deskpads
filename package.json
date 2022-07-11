@@ -1,0 +1,14 @@
+{
+  "name": "jk-deskpads",
+  "version": "1.0.0",
+  "description": "que onda loco aguanten los deskpads",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --include-path sass sass/index.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

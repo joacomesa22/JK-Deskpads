@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kdam Thmor Pro", sans-serif; }
+
+body {
+  background-color: black;
+  color: white;
+  width: 100vw; }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  background-color: black;
+  border-bottom: 1px solid white; }
+  .nav__logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5%; }
+    .nav__logo img {
+      max-width: 300px;
+      transition: transform 0.3s; }
+      .nav__logo img:hover {
+        transform: scale(1.1); }
+  .nav__links {
+    display: flex;
+    justify-content: space-around; }
+    .nav__links li {
+      list-style-type: none;
+      padding: 0 15px; }
+      .nav__links li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase; }
+        .nav__links li a:hover {
+          border-bottom: 2px solid #fff; }
+
+.seccion-formulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rojito.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 80vh; }
+  .seccion-formulario h1 {
+    font-size: 4rem; }
+  .seccion-formulario .formulario {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .seccion-formulario .formulario__nombre {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .seccion-formulario .formulario__nombre label {
+        font-size: 1.8rem; }
+      .seccion-formulario .formulario__nombre input {
+        padding: 8px 15px;
+        border-radius: 30px;
+        border: none; }
+    .seccion-formulario .formulario__email {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px; }
+      .seccion-formulario .formulario__email label {
+        font-size: 1.8rem; }
+      .seccion-formulario .formulario__email input {
+        padding: 8px 15px;
+        border-radius: 30px;
+        border: none; }
+    .seccion-formulario .formulario__mensaje {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px; }
+      .seccion-formulario .formulario__mensaje label {
+        font-size: 1.8rem; }
+      .seccion-formulario .formulario__mensaje textarea {
+        margin-top: 10px;
+        border-radius: 10px;
+        border: none;
+        resize: none; }
+    .seccion-formulario .formulario__boton input {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: white;
+      border: none;
+      border-radius: 30px;
+      margin-top: 10px;
+      transition: transform 0.3s; }
+      .seccion-formulario .formulario__boton input:hover {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        transform: scale(1.1); }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid white;
+  height: 15vh;
+  overflow: hidden; }
+  footer p {
+    font-size: 1.1rem; }
+
+.footer-logo img {
+  max-width: 300px;
+  transition: transform 0.3s; }
+  .footer-logo img:hover {
+    transform: scale(1.1); }
+
+@media screen and (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%; }
+    .nav__logo {
+      margin: 0;
+      padding-top: 20px; }
+    .nav__links {
+      padding-bottom: 10px; }
+  .seccion-formulario {
+    flex-direction: column;
+    align-items: center; }
+    .seccion-formulario h1 {
+      font-size: 3rem; } }
+
+@media screen and (max-width: 500px) {
+  .nav__links li a {
+    font-size: 0.8rem; }
+  .nav__logo img {
+    max-width: 250px; }
+  .seccion-formulario .formulario {
+    width: 80vw; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; } }
