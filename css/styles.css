@@ -761,6 +761,14 @@ footer p{
     .seccion-dream-team__texto{
         width: 70%;
     }
+    /* Contacto */
+    .seccion-formulario h1{
+        font-size: 2.5rem;
+        margin-bottom: 70px;
+    }
+    .formulario{
+        width: 80vw;
+    }
     footer{
         display: flex;
         flex-direction: column;
