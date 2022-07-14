@@ -17,7 +17,11 @@ body{
     align-items: center;
     height: 15vh;
     background-color: black;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 .nav__logo{
     display: flex;
@@ -31,22 +35,38 @@ body{
 .nav__logo img:hover{
     transform: scale(1.1);
 }
+.nav__label, .nav__input{
+    display: none;
+}
 .nav__links{
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 .nav__links li{
     list-style-type: none;
     padding: 0 15px;
 }
-.nav__links li a{
+.nav__link{
     text-decoration: none;
     font-size: 1.2rem;
+    display: inline-block;
     color: #fff;
     text-transform: uppercase;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
-.nav__links li a:hover{
-    border-bottom: 2px solid #fff;
+.nav__link::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+.nav__link:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
 }
 /* Fin Navegación */
 
@@ -69,14 +89,14 @@ body{
     background-size: cover;
     background-position: center center;
     height: 90vh;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 .hero-index img{
     height: 30%;
 }
 .hero-index h2{
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 1.4rem;
 }
 /* Fin Seccion Hero */
 
@@ -86,7 +106,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 100px 12px;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 .seccion-deskpads__imagen{
     background-image: url("../images/naaasaa.jpeg");
@@ -108,12 +128,11 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+
 .seccion-deskpads__texto h2{
     font-size: 3.5rem;
     margin-bottom: 20px;
-}
-.seccion-deskpads__texto p{
-    font-size: 1rem;
 }
 .seccion-deskpads__texto a{
     padding: 10px 15px;
@@ -166,9 +185,6 @@ body{
 .seccion-nosotros__texto h2{
     font-size: 3.5rem;
     margin-bottom: 20px;
-}
-.seccion-nosotros__texto p{
-    font-size: 1rem;
 }
 .seccion-nosotros__texto a{
     padding: 10px 15px;
@@ -252,14 +268,14 @@ body{
 }
 .deskpad-card__text{
     margin-top: 2px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.deskpad-card a{
-    padding: 5px 15px;
-    font-size: 1rem;
+.deskpad-card__boton{
+    padding: 8px 16px;
+    font-size: 1.2rem;
     border-radius: 10px;
     border: 1px solid white;
     color: white;
@@ -269,7 +285,7 @@ body{
     text-decoration: none;
     transition: transform 0.3s;
 }
-.deskpad-card a:hover{
+.deskpad-card__boton:hover{
     background: #fff;
     color: #000;
     border: 1px solid #000;
@@ -290,12 +306,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    height: 45vh;
+    height: 50vh;
     border-bottom: 1px solid white;
 }
 .hero-nosotros h2{
-    margin-left: 250px;
     font-size: 5rem;
+    margin-top: 150px;
+    margin-left: 100px;
 }
 
 /* Sección JK Deskpads */
@@ -320,20 +337,14 @@ body{
     transform: scale(1.1);
 }
 .seccion-jk-deskpads__texto{
-    width: 50%;
-    max-width: 30%;
+    width: 30%;
     text-align: initial;
-    padding-left: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .seccion-jk-deskpads__texto h2{
     font-size: 3.5rem;
     margin-bottom: 20px;
-}
-.seccion-jk-deskpads__texto p{
-    font-size: 1rem;
 }
 
 /* Sección Historia */
@@ -358,10 +369,8 @@ body{
     transform: scale(1.1);
 }
 .seccion-historia__texto{
-    width: 50%;
-    max-width: 30%;
+    width: 30%;
     text-align: initial;
-    padding-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -370,9 +379,7 @@ body{
     font-size: 3.5rem;
     margin-bottom: 20px;
 }
-.seccion-historia__texto p{
-    font-size: 1;
-}
+
 
 /* Seccion Dream Team */
 .seccion-dream-team{
@@ -397,10 +404,8 @@ body{
     transform: scale(1.1);
 }
 .seccion-dream-team__texto{
-    width: 50%;
-    max-width: 30%;
+    width: 30%;
     text-align: initial;
-    padding-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -408,9 +413,6 @@ body{
 .seccion-dream-team__texto h2{
     font-size: 3.5rem;
     margin-bottom: 20px;
-}
-.seccion-dream-team__texto p{
-    font-size: 1rem;
 }
 /* Fin Nosotros */
 
@@ -431,6 +433,7 @@ body{
     background-size: cover;
     background-position: bottom;
     height: 80vh;
+    margin-top: 120px;
 }
 .seccion-formulario h1{
     font-size: 4rem;
@@ -511,7 +514,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid white;
+    border-top: 2px solid white;
     height: 15vh;
     overflow: hidden;
 }
@@ -527,20 +530,26 @@ footer p{
 }
 /* Fin Footer */
 
+/* Medias Queries */
 @media screen and (max-width: 800px) {
-    
-    /* Navegation */
-    .nav{
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    .nav__logo{
-        margin: 0;
-        padding-top: 20px;
+    .nav__label{
+        display: block;
+        cursor: pointer;
     }
     .nav__links{
-        padding-bottom: 10px;
+        position: fixed;
+        height: 85vh;
+        bottom: 0;
+        background: #000;
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        border-top: 2px solid #fff;
+    }
+    .nav__input:checked + .nav__links{
+        clip-path: circle(100% at center);
     }
     /* Sección Deskpads del Index */
     .seccion-deskpads{
@@ -586,20 +595,9 @@ footer p{
     }
     /* Deskpads */
     .cards{
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 80vw;
+        grid-template-columns: 1fr;
     }
-    .deskpad-card button{
-        padding: 5px 8px;
-        font-size: 0.8rem;
-        margin-top: 10px;
-    }
-    .deskpad-card__text{
-        font-size: 1.1rem;
-    }
-
     /* Nosotros */
-
     .hero-nosotros h2{
         font-size: 4rem;
         margin-left: 60px;
@@ -617,16 +615,13 @@ footer p{
         justify-content: center;
         align-items: center;
         width: 50%;
-
     }
     .seccion-jk-deskpads__texto h2{
         margin-top: 20px;
-        width: 400px;
-        text-align: center;
+        font-size: 2.8rem
     }
     .seccion-jk-deskpads__texto p{
         text-align: center;
-        width: 400px;
     }
 
     .seccion-historia{
@@ -642,16 +637,13 @@ footer p{
         justify-content: center;
         align-items: center;
         width: 50%;
-
     }
     .seccion-historia__texto h2{
         margin-top: 20px;
-        width: 400px;
-        text-align: center;
+        font-size: 2.8rem
     }
     .seccion-historia__texto p{
         text-align: center;
-        width: 400px;
     }
 
     .seccion-dream-team{
@@ -667,16 +659,13 @@ footer p{
         justify-content: center;
         align-items: center;
         width: 50%;
-
     }
     .seccion-dream-team__texto h2{
         margin-top: 20px;
-        width: 400px;
-        text-align: center;
+        font-size: 2.8rem
     }
     .seccion-dream-team__texto p{
         text-align: center;
-        width: 400px;
     }
     /* Contacto */
     .seccion-formulario{
@@ -688,18 +677,20 @@ footer p{
         margin: 0 0 30px 0;
     }
 }
+
 @media screen and (max-width: 500px) {
-    /* Navegación */
-    .nav__links li a{
-        font-size: 0.8rem;
+    .nav{
+        flex-direction: column;
+        padding-top: 10px;
     }
-    .nav__logo img{
-        max-width: 250px;
+    /* Hero Index */
+    .hero-index img{
+        height: 25%;
     }
     /* Sección Deskpads del Index */
     .seccion-deskpads__imagen{
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
     .seccion-deskpads__texto h2{
         font-size: 2.5rem;
@@ -710,8 +701,8 @@ footer p{
 
     /* Sección Nosotros del Index */
     .seccion-nosotros__imagen{
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
     .seccion-nosotros__texto h2{
         font-size: 2.5rem;
@@ -720,8 +711,13 @@ footer p{
         width: 70%;
     }
     /* Deskpads */
-    .cards{
-        grid-template-columns: 1fr;
+    .deskpad-card__text{
+        font-size: 1.2rem;
+    }
+    .deskpad-card__boton{
+        padding: 4px 12px;
+        font-size: 1rem;
+        margin-top: 2px;
     }
     /* Nosotros */
     .hero-nosotros h2{
@@ -730,8 +726,8 @@ footer p{
     }
     /* JK Deskpads */
     .seccion-jk-deskpads__imagen{
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
     .seccion-jk-deskpads__texto h2{
         font-size: 2.5rem;
@@ -741,8 +737,8 @@ footer p{
     }
     /* Historia */
     .seccion-historia__imagen{
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
     .seccion-historia__texto h2{
         font-size: 2.5rem;
@@ -752,8 +748,8 @@ footer p{
     }
     /* Dream Team */
     .seccion-dream-team__imagen{
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
     .seccion-dream-team__texto h2{
         font-size: 2.5rem;
@@ -764,7 +760,6 @@ footer p{
     /* Contacto */
     .seccion-formulario h1{
         font-size: 2.5rem;
-        margin-bottom: 70px;
     }
     .formulario{
         width: 80vw;
