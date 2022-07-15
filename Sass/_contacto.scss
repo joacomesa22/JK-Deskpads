@@ -11,6 +11,42 @@ body{
     width: 100vw;
 }
 
+// Extends
+.formulario__input{
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: none;
+}
+.formulario__font-size{
+    font-size: 1.8rem;
+}
+
+// Mixin
+@mixin formulario__espaciado($alineacion, $margen) {
+    display: flex;
+    align-items: $alineacion;
+    justify-content: space-between;
+    margin-top: $margen;
+}
+
+// Mapa
+$redesSociales: (
+    snapchat: #FFFC00,
+    tiktok: #ff0050,
+    twitter: #1DA1F2,
+);
+
+// Bucle each
+@each $nombre, $color-icono in $redesSociales {
+    .link-#{$nombre} {
+        font-size: 1.7rem;
+        margin: 0 20px;
+        text-decoration: none;
+        border-radius: 10px;
+        color: $color-icono;
+    }
+}
+
 // Navegacion
 .nav{
     display: flex;
@@ -83,35 +119,28 @@ body{
         justify-content: space-around;
 
         &__nombre{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            
+            @include formulario__espaciado(center, 0);
             
             label{
-                font-size: 1.8rem;
+                @extend .formulario__font-size
             }
 
             input{
-                padding: 8px 15px;
-                border-radius: 30px;
-                border: none;
+                @extend .formulario__input
             }
         }
 
         &__email{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 10px;
+
+            @include formulario__espaciado(center, 10px);
 
             label{
-                font-size: 1.8rem;
+                @extend .formulario__font-size
             }
 
             input{
-                padding: 8px 15px;
-                border-radius: 30px;
-                border: none;
+                @extend .formulario__input
             }
         }
 
@@ -121,7 +150,7 @@ body{
             margin-top: 10px;
 
             label{
-                font-size: 1.8rem;
+                @extend .formulario__font-size
             }
 
             textarea{
