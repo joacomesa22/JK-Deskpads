@@ -1,0 +1,84 @@
+// Hero
+.hero-deskpads{
+    background-image: url("../images/deskpadss.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+}
+
+// Seccion Shop
+.seccion-shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// Cards
+.cards{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.deskpad-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 30px 30px 20px 30px;
+    transition: transform 0.3s;
+    &:hover{
+        transform: translateY(-10px);
+    }
+    &__contenedor{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__img {
+        img{
+            width: 100%;
+        }
+    }
+    &__text{
+        margin-top: 2px;
+        font-size: 1.4rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__boton{
+        padding: 8px 16px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        margin-top: 2px;
+        text-decoration: none;
+        transition: transform 0.3s;
+        &:hover{
+            background: #fff;
+            color: #000;
+            border: 1px solid #000;
+            transform: scale(1.1);
+        }
+    }
+}

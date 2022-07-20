@@ -1,0 +1,110 @@
+// Header
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background-color: black;
+    border-bottom: 2px solid white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    &__logo{
+        display: flex;
+        align-items: center;
+        margin-left: 5%; 
+        img{
+            max-width: 300px;
+            transition: transform 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__label, &__input{
+        display: none;
+    }
+    &__links{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        li{
+            list-style-type: none;
+            padding: 0 15px;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        &::after{
+            content: "";
+            display: block;
+            background: #fff;
+            width: 90%;
+            margin-top: 3px;
+            height: 3px;
+            clip-path: var(--clippy);
+            transition: clip-path .3s;
+        }
+        &:hover{
+            --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+        }
+    }
+}
+
+// Footer
+footer{
+    padding: 5% 0;
+    border-top: 2px solid white;
+    position: absolute;
+    width: 100%;
+    p{
+        font-size: 0.8rem;
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+    }
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+    justify-items: center;
+}
+.footer-logo{
+    align-self: center;
+    img{
+        max-width: 300px;
+        display: block;
+        transition: transform 0.3s;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%; 
+    &__pagina{
+        display: flex;
+        flex-direction: column;
+        .footer-link__titulo{
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+    }
+}
+.footer-link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+}

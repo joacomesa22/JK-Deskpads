@@ -1,0 +1,293 @@
+// Tablet
+@media screen and (max-width: 800px) {
+
+    // Header
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__links{
+        position: fixed;
+        height: 85vh;
+        bottom: 0;
+        background: #000;
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        border-top: 2px solid #fff;
+    }
+    .nav__input:checked + .nav__links{
+        clip-path: circle(100% at center);
+    }
+
+    //Seccion Deskpads del Index
+    .seccion-deskpads{
+        flex-direction: column;
+        &__imagen{
+            height: 500px;
+            width: 500px;
+        }
+        &__texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            h2{
+                margin-top: 20px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    // Seccion Nosotros del Index
+    .seccion-nosotros{
+        flex-direction: column;
+        &__imagen{
+            height: 500px;
+            width: 500px;
+        }
+        &__texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            h2{
+                margin-top: 20px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    // Cards de Deskpads
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    // Hero de Nosotros
+    .hero-nosotros h2{
+        font-size: 4rem;
+        margin-left: 60px;
+    }
+
+    // Seccion JK Deskpads de Nosotros
+    .seccion-jk-deskpads{
+        flex-direction: column;
+        &__imagen{
+            height: 500px;
+            width: 500px;
+        }
+        &__texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            h2{
+                margin-top: 20px;
+                font-size: 2.8rem
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    // Seccion Historia de Nosotros
+    .seccion-historia{
+        flex-direction: column;
+        &__imagen{
+            height: 500px;
+            width: 500px;
+        }
+        &__texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            h2{
+                margin-top: 20px;
+                font-size: 2.8rem
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    // Seccion Dream Team de Nosotros
+    .seccion-dream-team{
+        flex-direction: column;
+        &__imagen{
+            height: 500px;
+            width: 500px;
+        }
+        &__texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            h2{
+                margin-top: 20px;
+                font-size: 2.8rem
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    // Formulario de Contacto
+    .seccion-formulario{
+        flex-direction: column;
+        align-items: center;
+        h1{
+            font-size: 3rem;
+            margin: 100px 0 55px 0;
+        }
+    }
+    .formulario{
+        margin-top: 0;
+    }
+
+    // Footer
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+    .footer-links{
+        margin: 5% 0 0 5%;
+    }
+    .footer-links__pagina .footer-link__titulo{
+        font-size: 1rem;
+    }
+}
+
+// Mobile
+@media screen and (max-width: 500px) {
+    // Hero del Index
+    .hero-index img{
+        height: 25%;
+    }
+
+    // Seccion Deskpads del Index
+    .seccion-deskpads__imagen{
+        height: 300px;
+        width: 300px;
+    }
+    .seccion-deskpads__texto{
+        width: 70%;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    // Seccion Nosotros del Index
+    .seccion-nosotros__imagen{
+        height: 300px;
+        width: 300px;
+    }
+    .seccion-nosotros__texto{
+        width: 70%;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    // Cards de Deskpads
+    .deskpad-card__text{
+        font-size: 1.2rem;
+    }
+    .deskpad-card__boton{
+        padding: 4px 12px;
+        font-size: 1rem;
+        margin-top: 2px;
+    }
+
+    // Hero de Nosotros
+    .hero-nosotros h2{
+        font-size: 3rem;
+        margin-left: 40px;
+    }
+
+    // Seccion JK Deskpads de Nosotros
+    .seccion-jk-deskpads__imagen{
+        height: 300px;
+        width: 300px;
+    }
+    .seccion-jk-deskpads__texto{
+        width: 70%;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    // Seccion Historia de Nosotros
+    .seccion-historia__imagen{
+        height: 300px;
+        width: 300px;
+    }
+    .seccion-historia__texto{
+        width: 70%;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    // Seccion Dream Team de Nosotros
+    .seccion-dream-team__imagen{
+        height: 300px;
+        width: 300px;
+    }
+    .seccion-dream-team__texto{
+        width: 70%;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    // Formulario de Contacto
+    .seccion-formulario h1{
+        font-size: 3rem;
+        margin: 100px 0 40px 0;
+    }
+    .formulario{
+        width: 80vw;
+        &__nombre {
+            label{
+                font-size: 1.3rem;
+            }
+        }
+        &__email {
+            label{
+                font-size: 1.3rem;
+            }
+        }
+        &__mensaje{
+            label{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    // Footer
+    .footer-links{
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 20px;
+    }
+    .footer-link__titulo{
+        margin-top: 20px;
+    }
+    footer p{
+        bottom: 20px;
+        right: 30px;
+    }
+}
