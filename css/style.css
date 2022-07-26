@@ -4,17 +4,17 @@
   font-family: "Kdam Thmor Pro", sans-serif; }
 
 body {
-  background-color: black;
-  color: white;
-  width: 100vw; }
+  background-color: #101010;
+  color: #fff;
+  width: 100%; }
 
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 15vh;
-  background-color: black;
-  border-bottom: 2px solid white;
+  background-color: #101010;
+  border-bottom: 2px solid #fff;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -58,7 +58,7 @@ body {
 
 footer {
   padding: 5% 0;
-  border-top: 2px solid white;
+  border-top: 2px solid #fff;
   position: absolute;
   width: 100%; }
   footer p {
@@ -71,7 +71,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: flex-start;
-  justify-items: center; }
+  justify-items: center;
+  overflow: hidden; }
 
 .footer-logo {
   align-self: center; }
@@ -92,7 +93,7 @@ footer {
     .footer-links__pagina .footer-link__titulo {
       font-size: 1.2rem;
       margin-bottom: 5px;
-      display: block; }
+      display: inline-block; }
 
 .footer-link {
   text-decoration: none;
@@ -112,7 +113,7 @@ footer {
   background-size: cover;
   background-position: center center;
   height: 90vh;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid #fff; }
   .hero-index img {
     height: 30%; }
   .hero-index h2 {
@@ -124,7 +125,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   padding: 100px 12px;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid #fff; }
   .seccion-deskpads__imagen {
     background-image: url("../images/naaasaa.jpeg");
     background-size: cover;
@@ -132,7 +133,7 @@ footer {
     background-repeat: no-repeat;
     height: 600px;
     width: 600px;
-    border: 1px solid white;
+    border: 1px solid #fff;
     transition: transform 0.3s; }
     .seccion-deskpads__imagen:hover {
       transform: scale(1.1); }
@@ -150,8 +151,8 @@ footer {
       width: 100px;
       font-size: 1rem;
       border-radius: 10px;
-      color: black;
-      background-color: white;
+      color: #101010;
+      background-color: #fff;
       margin-top: 25px;
       text-decoration: none;
       text-align: center;
@@ -175,7 +176,7 @@ footer {
     background-repeat: no-repeat;
     height: 600px;
     width: 600px;
-    border: 1px solid white;
+    border: 1px solid #fff;
     transition: transform 0.3s; }
     .seccion-nosotros__imagen:hover {
       transform: scale(1.1); }
@@ -194,8 +195,8 @@ footer {
       font-size: 1rem;
       border-radius: 10px;
       border: none;
-      color: black;
-      background-color: white;
+      color: #101010;
+      background-color: #fff;
       margin-top: 25px;
       text-decoration: none;
       text-align: center;
@@ -210,8 +211,8 @@ footer {
   background-image: url("../images/deskpadss.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 45vh; }
+  background-position: left;
+  height: 60vh; }
 
 .seccion-shop {
   display: flex;
@@ -222,9 +223,9 @@ footer {
     flex-direction: column;
     align-items: center; }
     .seccion-shop__text h2 {
-      font-size: 3rem; }
+      font-size: 5rem; }
     .seccion-shop__text p {
-      font-size: 1.5rem; }
+      font-size: 1.4rem; }
 
 .cards {
   margin-top: 70px;
@@ -239,7 +240,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 30px;
   padding: 30px 30px 20px 30px;
   transition: transform 0.3s; }
@@ -261,8 +262,8 @@ footer {
     padding: 8px 16px;
     font-size: 1.2rem;
     border-radius: 10px;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #fff;
+    color: #fff;
     background-color: transparent;
     cursor: pointer;
     margin-top: 2px;
@@ -270,8 +271,8 @@ footer {
     transition: transform 0.3s; }
     .deskpad-card__boton:hover {
       background: #fff;
-      color: #000;
-      border: 1px solid #000;
+      color: #101010;
+      border: 1px solid #101010;
       transform: scale(1.1); }
 
 .hero-nosotros {
@@ -282,19 +283,19 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  height: 50vh;
-  border-bottom: 1px solid white; }
+  height: 90vh;
+  border-bottom: 1px solid #fff; }
   .hero-nosotros h2 {
     font-size: 5rem;
     margin-top: 150px;
-    margin-left: 100px; }
+    margin-left: 250px; }
 
 .seccion-jk-deskpads {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 100px 12px;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #fff; }
   .seccion-jk-deskpads__imagen {
     background-image: url("../images/otro-topo.jpg");
     background-size: cover;
@@ -302,7 +303,7 @@ footer {
     background-repeat: no-repeat;
     height: 600px;
     width: 600px;
-    border: 1px solid white;
+    border: 1px solid #fff;
     transition: transform 0.3s; }
     .seccion-jk-deskpads__imagen:hover {
       transform: scale(1.1); }
@@ -328,7 +329,7 @@ footer {
     background-repeat: no-repeat;
     height: 600px;
     width: 600px;
-    border: 1px solid white;
+    border: 1px solid #fff;
     transition: transform 0.3s; }
     .seccion-historia__imagen:hover {
       transform: scale(1.1); }
@@ -347,8 +348,8 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   padding: 100px 12px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white; }
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff; }
   .seccion-dream-team__imagen {
     background-image: url("../images/compas.png");
     background-size: cover;
@@ -356,7 +357,7 @@ footer {
     background-repeat: no-repeat;
     height: 600px;
     width: 600px;
-    border: 1px solid white;
+    border: 1px solid #fff;
     transition: transform 0.3s; }
     .seccion-dream-team__imagen:hover {
       transform: scale(1.1); }
@@ -374,17 +375,17 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rojito.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  height: 95vh; }
+  height: 90vh; }
   .seccion-formulario h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-right: 250px; }
 
 .formulario {
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -398,7 +399,8 @@ footer {
     .formulario__nombre input {
       padding: 8px 15px;
       border-radius: 30px;
-      border: none; }
+      border: none;
+      width: 50%; }
   .formulario__email {
     display: flex;
     align-items: center;
@@ -409,7 +411,8 @@ footer {
     .formulario__email input {
       padding: 8px 15px;
       border-radius: 30px;
-      border: none; }
+      border: none;
+      width: 50%; }
   .formulario__mensaje {
     display: flex;
     flex-direction: column;
@@ -424,7 +427,7 @@ footer {
   .formulario__boton input {
     padding: 10px 20px;
     cursor: pointer;
-    background-color: white;
+    background-color: #fff;
     border: none;
     border-radius: 30px;
     margin-top: 10px;
@@ -438,12 +441,13 @@ footer {
 @media screen and (max-width: 800px) {
   .nav__label {
     display: block;
-    cursor: pointer; }
+    cursor: pointer;
+    padding-right: 25px; }
   .nav__links {
     position: fixed;
-    height: 85vh;
+    height: calc(100vh - 15vh);
     bottom: 0;
-    background: #000;
+    background: #101010;
     width: 100%;
     left: 0;
     flex-direction: column;
@@ -482,11 +486,15 @@ footer {
         margin-top: 20px; }
       .seccion-nosotros__texto p {
         text-align: center; }
+  .hero-deskpads {
+    background-position: center; }
+  .seccion-shop__text h2 {
+    font-size: 4rem; }
   .cards {
     grid-template-columns: 1fr; }
   .hero-nosotros h2 {
     font-size: 4rem;
-    margin-left: 60px; }
+    margin-left: 50px; }
   .seccion-jk-deskpads {
     flex-direction: column; }
     .seccion-jk-deskpads__imagen {
@@ -540,7 +548,7 @@ footer {
     align-items: center; }
     .seccion-formulario h1 {
       font-size: 3rem;
-      margin: 100px 0 55px 0; }
+      margin: 120px 0 20px 0; }
   .formulario {
     margin-top: 0; }
   .footer-container {
@@ -551,6 +559,15 @@ footer {
     font-size: 1rem; } }
 
 @media screen and (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    height: 18vh; }
+    .nav__logo {
+      margin: 0; }
+    .nav__label {
+      padding-right: 0; }
+    .nav__links {
+      height: calc(100vh - 18vh); }
   .hero-index img {
     height: 25%; }
   .seccion-deskpads__imagen {
@@ -573,9 +590,6 @@ footer {
     padding: 4px 12px;
     font-size: 1rem;
     margin-top: 2px; }
-  .hero-nosotros h2 {
-    font-size: 3rem;
-    margin-left: 40px; }
   .seccion-jk-deskpads__imagen {
     height: 300px;
     width: 300px; }
@@ -597,17 +611,6 @@ footer {
     width: 70%; }
     .seccion-dream-team__texto h2 {
       font-size: 2.5rem; }
-  .seccion-formulario h1 {
-    font-size: 3rem;
-    margin: 100px 0 40px 0; }
-  .formulario {
-    width: 80vw; }
-    .formulario__nombre label {
-      font-size: 1.3rem; }
-    .formulario__email label {
-      font-size: 1.3rem; }
-    .formulario__mensaje label {
-      font-size: 1.3rem; }
   .footer-links {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px; }

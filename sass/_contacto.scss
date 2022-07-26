@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.5),
@@ -12,16 +13,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 95vh;
+    height: 90vh;
     h1{
-        font-size: 4rem;
+        font-size: 5rem;
         margin-right: 250px;
     }
 }
 
 // Formulario
 .formulario{
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -37,6 +37,7 @@
             padding: 8px 15px;
             border-radius: 30px;
             border: none;
+            width: 50%;
         }
     }
     &__email{
@@ -51,6 +52,7 @@
             padding: 8px 15px;
             border-radius: 30px;
             border: none;
+            width: 50%;
         }
     }
     &__mensaje{
@@ -71,15 +73,15 @@
         input{
             padding: 10px 20px;
             cursor: pointer;
-            background-color: white;
+            background-color: $light;
             border: none;
             border-radius: 30px;
             margin-top: 10px;
             transition: transform 0.3s;
             &:hover{
                 background: transparent;
-                color: #fff;
-                border: 1px solid #fff;
+                color: $light;
+                border: 1px solid $light;
                 transform: scale(1.1);
             }
         }

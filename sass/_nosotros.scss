@@ -11,12 +11,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    height: 50vh;
-    border-bottom: 1px solid white;
+    height: 90vh;
+    border-bottom: 1px solid $light;
     h2{
         font-size: 5rem;
         margin-top: 150px;
-        margin-left: 100px;
+        margin-left: 250px;
     }
 }
 
@@ -26,7 +26,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 100px 12px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $light;
     &__imagen{
         background-image: url("../images/otro-topo.jpg");
         background-size: cover;
@@ -34,7 +34,7 @@
         background-repeat: no-repeat;
         height: 600px;
         width: 600px;
-        border: 1px solid white;
+        border: 1px solid $light;
         transition: transform 0.3s;
         &:hover{
             transform: scale(1.1);
@@ -66,7 +66,7 @@
         background-repeat: no-repeat;
         height: 600px;
         width: 600px;
-        border: 1px solid white;
+        border: 1px solid $light;
         transition: transform 0.3s;
         &:hover{
             transform: scale(1.1);
@@ -92,8 +92,8 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 100px 12px;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
+    border-bottom: 1px solid $light;
+    border-top: 1px solid $light;
     &__imagen{
         background-image: url("../images/compas.png");
         background-size: cover;
@@ -101,7 +101,7 @@
         background-repeat: no-repeat;
         height: 600px;
         width: 600px;
-        border: 1px solid white;
+        border: 1px solid $light;
         transition: transform 0.3s;
         &:hover{
             transform: scale(1.1);

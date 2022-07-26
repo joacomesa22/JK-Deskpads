@@ -5,18 +5,19 @@
     .nav__label{
         display: block;
         cursor: pointer;
+        padding-right: 25px;
     }
     .nav__links{
         position: fixed;
-        height: 85vh;
+        height: calc(100vh - 15vh);
         bottom: 0;
-        background: #000;
+        background: $dark;
         width: 100%;
         left: 0;
         flex-direction: column;
         clip-path: circle(0 at center);
         transition: clip-path 1s ease-in-out;
-        border-top: 2px solid #fff;
+        border-top: 2px solid $light;
     }
     .nav__input:checked + .nav__links{
         clip-path: circle(100% at center);
@@ -67,6 +68,16 @@
     }
 
     // Cards de Deskpads
+    .hero-deskpads{
+        background-position: center;
+    }
+    .seccion-shop{
+        &__text{
+            h2{
+                font-size: 4rem;
+            }
+        }
+    }
     .cards{
         grid-template-columns: 1fr;
     }
@@ -74,7 +85,7 @@
     // Hero de Nosotros
     .hero-nosotros h2{
         font-size: 4rem;
-        margin-left: 60px;
+        margin-left: 50px;
     }
 
     // Seccion JK Deskpads de Nosotros
@@ -152,7 +163,7 @@
         align-items: center;
         h1{
             font-size: 3rem;
-            margin: 100px 0 55px 0;
+            margin: 120px 0 20px 0;
         }
     }
     .formulario{
@@ -173,6 +184,19 @@
 
 // Mobile
 @media screen and (max-width: 500px) {
+    .nav{
+        flex-direction: column;
+        height: 18vh;
+        &__logo{
+            margin: 0;
+        }
+        &__label{
+            padding-right: 0;
+        }
+        &__links{
+            height: calc(100vh - 18vh);
+        }
+    }
     // Hero del Index
     .hero-index img{
         height: 25%;
@@ -212,12 +236,6 @@
         margin-top: 2px;
     }
 
-    // Hero de Nosotros
-    .hero-nosotros h2{
-        font-size: 3rem;
-        margin-left: 40px;
-    }
-
     // Seccion JK Deskpads de Nosotros
     .seccion-jk-deskpads__imagen{
         height: 300px;
@@ -253,31 +271,6 @@
             font-size: 2.5rem;
         }
     }
-
-    // Formulario de Contacto
-    .seccion-formulario h1{
-        font-size: 3rem;
-        margin: 100px 0 40px 0;
-    }
-    .formulario{
-        width: 80vw;
-        &__nombre {
-            label{
-                font-size: 1.3rem;
-            }
-        }
-        &__email {
-            label{
-                font-size: 1.3rem;
-            }
-        }
-        &__mensaje{
-            label{
-                font-size: 1.3rem;
-            }
-        }
-    }
-
     // Footer
     .footer-links{
         grid-template-columns: repeat(3, 1fr);
