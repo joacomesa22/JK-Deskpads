@@ -4,7 +4,7 @@
   font-family: "Kdam Thmor Pro", sans-serif; }
 
 body {
-  background: linear-gradient(45deg, #202020, #000);
+  background: linear-gradient(45deg, #151515, #000);
   color: #fff;
   width: 100%; }
 
@@ -13,7 +13,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 15vh;
-  background: linear-gradient(45deg, #202020, #000);
+  background: linear-gradient(45deg, #151515, #000);
   border-bottom: 2px solid #fff;
   text-align: center;
   position: fixed;
@@ -57,7 +57,7 @@ body {
       --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%); }
 
 footer {
-  background: linear-gradient(45deg, #202020, #000);
+  background: linear-gradient(45deg, #151515, #000);
   padding: 5% 0;
   border-top: 2px solid #fff;
   position: absolute;
@@ -152,7 +152,7 @@ footer {
       width: 100px;
       font-size: 1rem;
       border-radius: 10px;
-      color: #202020;
+      color: #151515;
       background-color: #fff;
       margin-top: 25px;
       text-decoration: none;
@@ -196,7 +196,7 @@ footer {
       font-size: 1rem;
       border-radius: 10px;
       border: none;
-      color: #202020;
+      color: #151515;
       background-color: #fff;
       margin-top: 25px;
       text-decoration: none;
@@ -272,8 +272,8 @@ footer {
     transition: transform 0.3s; }
     .deskpad-card__boton:hover {
       background: #fff;
-      color: #202020;
-      border: 1px solid #202020;
+      color: #151515;
+      border: 1px solid #151515;
       transform: scale(1.1); }
 
 .hero-nosotros {
@@ -448,7 +448,7 @@ footer {
     position: fixed;
     height: calc(100vh - 15vh);
     bottom: 0;
-    background: #202020;
+    background: linear-gradient(45deg, #151515, #000);
     width: 100%;
     left: 0;
     flex-direction: column;
