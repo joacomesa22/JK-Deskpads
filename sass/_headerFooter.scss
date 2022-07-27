@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     height: 15vh;
-    background-color: $dark;
+    background: $gradient;
     border-bottom: 2px solid $light;
     text-align: center;
     position: fixed;
@@ -59,6 +59,7 @@
 
 // Footer
 footer{
+    background: $gradient;
     padding: 5% 0;
     border-top: 2px solid $light;
     position: absolute;
