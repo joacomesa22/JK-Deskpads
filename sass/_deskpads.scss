@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid $light;
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 30px 30px 20px 30px;
     transition: transform 0.3s;
     &:hover{
@@ -54,6 +54,7 @@
     &__img {
         img{
             width: 100%;
+            border-radius: 15px;
         }
     }
     &__text{
@@ -66,7 +67,7 @@
     &__boton{
         padding: 8px 16px;
         font-size: 1.2rem;
-        border-radius: 10px;
+        border-radius: 15px;
         border: 1px solid $light;
         color: $light;
         background-color: transparent;

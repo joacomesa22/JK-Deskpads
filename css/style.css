@@ -242,7 +242,7 @@ footer {
   align-items: center;
   justify-content: center;
   border: 1px solid #fff;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 30px 30px 20px 30px;
   transition: transform 0.3s; }
   .deskpad-card:hover {
@@ -252,7 +252,8 @@ footer {
     flex-direction: column;
     width: 100%; }
   .deskpad-card__img img {
-    width: 100%; }
+    width: 100%;
+    border-radius: 15px; }
   .deskpad-card__text {
     margin-top: 2px;
     font-size: 1.4rem;
@@ -262,7 +263,7 @@ footer {
   .deskpad-card__boton {
     padding: 8px 16px;
     font-size: 1.2rem;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid #fff;
     color: #fff;
     background-color: transparent;
