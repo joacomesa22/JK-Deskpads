@@ -2,7 +2,9 @@
 .seccion-cards {
   display: flex;
   flex-direction: column;
-  margin-top: calc((112.5px - var(--spacer--lg)) + var(--spacer--md));
+  margin-top: calc(
+    ((67px + var(--spacer--sm) * 2) - var(--spacer--lg)) + var(--spacer--sm)
+  );
   gap: var(--spacer--md);
   &__text {
     display: flex;
