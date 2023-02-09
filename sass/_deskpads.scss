@@ -1,85 +1,85 @@
 // Hero
-.hero-deskpads{
-    background-image: url("../images/deskpadss.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 60vh;
+.hero-deskpads {
+  background-image: url("../images/deskpadss.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 60vh;
 }
 
 // Seccion Shop
-.seccion-shop{
+.seccion-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h2{
-            font-size: 5rem;
-        }
-        p{
-            font-size: 1.4rem;
-        }
+    h2 {
+      font-size: 5rem;
     }
+    p {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 // Cards
-.cards{
-    margin-top: 70px;
-    margin-bottom: 100px;
-    max-width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+.cards {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
-.deskpad-card{
+.deskpad-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--colorLight);
+  border-radius: 15px;
+  padding: 30px 30px 20px 30px;
+  transition: transform 0.3s;
+  &:hover {
+    transform: translateY(-10px);
+  }
+  &__contenedor {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid $light;
+    width: 100%;
+  }
+  &__img {
+    img {
+      width: 100%;
+      border-radius: 15px;
+    }
+  }
+  &__text {
+    margin-top: 2px;
+    font-size: 1.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__boton {
+    padding: 8px 16px;
+    font-size: 1.2rem;
     border-radius: 15px;
-    padding: 30px 30px 20px 30px;
+    border: 1px solid var(--colorLight);
+    color: var(--colorLight);
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 2px;
+    text-decoration: none;
     transition: transform 0.3s;
-    &:hover{
-        transform: translateY(-10px);
+    &:hover {
+      background: var(--colorLight);
+      color: var(--colorDark);
+      border: 1px solid var(--colorDark);
+      transform: scale(1.1);
     }
-    &__contenedor{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    &__img {
-        img{
-            width: 100%;
-            border-radius: 15px;
-        }
-    }
-    &__text{
-        margin-top: 2px;
-        font-size: 1.4rem;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__boton{
-        padding: 8px 16px;
-        font-size: 1.2rem;
-        border-radius: 15px;
-        border: 1px solid $light;
-        color: $light;
-        background-color: transparent;
-        cursor: pointer;
-        margin-top: 2px;
-        text-decoration: none;
-        transition: transform 0.3s;
-        &:hover{
-            background: $light;
-            color: $dark;
-            border: 1px solid $dark;
-            transform: scale(1.1);
-        }
-    }
+  }
 }

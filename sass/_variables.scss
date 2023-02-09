@@ -1,3 +1,24 @@
-$dark: #151515;
-$light: #fff;
-$gradient: linear-gradient(45deg, #151515, #000);
+:root {
+  // Spacers
+  --spacer--sm: clamp(12px, 6.615383px + 1.538462vw, 22px);
+  --spacer--md: clamp(24px, 15.384617px + 2.461538vw, 40px);
+  --spacer--lg: clamp(32px, 8.8461525px + 6.615385vw, 75px);
+
+  // Font
+  --fontFam: "Kdam Thmor Pro", sans-serif;
+  --fontXS: clamp(0.8rem, 0.7548rem + 0.2065vw, 1rem);
+  --fontS: clamp(0.95rem, 0.59090903rem + 0.727273vw, 1.2rem);
+  --fontM: clamp(1.18rem, 0.94454538rem + 1.076364vw, 1.55rem);
+  --fontL: clamp(1.35rem, 0.93636366rem + 1.890909vw, 2rem);
+  --fontXL: clamp(1.5rem, 0.73636366rem + 3.490909vw, 2.7rem);
+  --fontXXL: clamp(2rem, -0.22727269rem + 10.181818vw, 4rem);
+
+  // Colors
+  --colorLight: #f2f2f2;
+  --colorDark: #151515;
+  --gradient: linear-gradient(45deg, #151515, #000);
+
+  // Utilities
+  --transition-normal: all 250ms ease-in-out;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}

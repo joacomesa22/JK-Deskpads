@@ -1,121 +1,121 @@
 // Hero
-.hero-nosotros{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-image:  linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-    ), url("../images/otro-sprinkles.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 90vh;
-    border-bottom: 1px solid $light;
-    h2{
-        font-size: 5rem;
-        margin-top: 150px;
-        margin-left: 250px;
-    }
+.hero-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/otro-sprinkles.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 90vh;
+  border-bottom: 1px solid var(--colorLight);
+  h2 {
+    font-size: 5rem;
+    margin-top: 150px;
+    margin-left: 250px;
+  }
 }
 
 // Seccion Deskpads
-.seccion-jk-deskpads{
+.seccion-jk-deskpads {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 12px;
+  border-bottom: 1px solid var(--colorLight);
+  &__imagen {
+    background-image: url("../images/otro-topo.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    border: 1px solid var(--colorLight);
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__texto {
+    width: 30%;
+    text-align: initial;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 100px 12px;
-    border-bottom: 1px solid $light;
-    &__imagen{
-        background-image: url("../images/otro-topo.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        height: 600px;
-        width: 600px;
-        border: 1px solid $light;
-        transition: transform 0.3s;
-        &:hover{
-            transform: scale(1.1);
-        }
+    flex-direction: column;
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
     }
-    &__texto{
-        width: 30%;
-        text-align: initial;
-        display: flex;
-        flex-direction: column;
-        h2{
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-    }
+  }
 }
 
 // Seccion Historia
-.seccion-historia{
+.seccion-historia {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 12px;
+  &__imagen {
+    background-image: url("../images/mdq.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    border: 1px solid var(--colorLight);
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__texto {
+    width: 30%;
+    text-align: initial;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 100px 12px;
-    &__imagen{
-        background-image: url("../images/mdq.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        height: 600px;
-        width: 600px;
-        border: 1px solid $light;
-        transition: transform 0.3s;
-        &:hover{
-            transform: scale(1.1);
-        }
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
     }
-    &__texto{
-        width: 30%;
-        text-align: initial;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h2{
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-    }
+  }
 }
 
-
 // Seccion Dream Team
-.seccion-dream-team{
+.seccion-dream-team {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 12px;
+  border-bottom: 1px solid var(--colorLight);
+  border-top: 1px solid var(--colorLight);
+  &__imagen {
+    background-image: url("../images/compas.png");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    border: 1px solid var(--colorLight);
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__texto {
+    width: 30%;
+    text-align: initial;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 100px 12px;
-    border-bottom: 1px solid $light;
-    border-top: 1px solid $light;
-    &__imagen{
-        background-image: url("../images/compas.png");
-        background-size: cover;
-        background-position: center right;
-        background-repeat: no-repeat;
-        height: 600px;
-        width: 600px;
-        border: 1px solid $light;
-        transition: transform 0.3s;
-        &:hover{
-            transform: scale(1.1);
-        }
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
     }
-    &__texto{
-        width: 30%;
-        text-align: initial;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h2{
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-    }
+  }
 }

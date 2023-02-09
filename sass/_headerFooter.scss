@@ -1,112 +1,87 @@
 // Header
-.nav{
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--gradient);
+  border-bottom: 2px solid var(--colorLight);
+  padding: var(--spacer--sm);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  &__logo {
+    img {
+      max-width: 300px;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
+  }
+  &__label,
+  &__input {
+    display: none;
+  }
+  &__links {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 15vh;
-    background: $gradient;
-    border-bottom: 2px solid $light;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    &__logo{
-        display: flex;
-        align-items: center;
-        margin-left: 5%; 
-        img{
-            max-width: 300px;
-            transition: transform 0.3s;
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
+    gap: var(--spacer--sm);
+
+    &--link {
+      font-size: var(--fontS);
+      text-transform: uppercase;
+      &::after {
+        content: "";
+        display: block;
+        background: var(--colorLight);
+        margin-top: 3px;
+        height: 3px;
+        clip-path: var(--clippy);
+        transition: all 0.3s;
+      }
+      &:hover {
+        --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+      }
     }
-    &__label, &__input{
-        display: none;
-    }
-    &__links{
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        li{
-            list-style-type: none;
-            padding: 0 15px;
-        }
-    }
-    &__link{
-        text-decoration: none;
-        font-size: 1.2rem;
-        display: inline-block;
-        color: $light;
-        text-transform: uppercase;
-        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-        &::after{
-            content: "";
-            display: block;
-            background: $light;
-            width: 90%;
-            margin-top: 3px;
-            height: 3px;
-            clip-path: var(--clippy);
-            transition: clip-path .3s;
-        }
-        &:hover{
-            --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
-        }
-    }
+  }
 }
 
 // Footer
-footer{
-    background: $gradient;
-    padding: 5% 0;
-    border-top: 2px solid $light;
-    position: absolute;
-    width: 100%;
-    p{
+.footer-container {
+  background: var(--gradient);
+  border-top: 2px solid var(--colorLight);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--spacer--lg);
+  padding: var(--spacer--md);
+
+  .footer-logo {
+    img {
+      max-width: 300px;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    gap: var(--spacer--md);
+    align-items: start;
+
+    &__pagina {
+      display: flex;
+      flex-direction: column;
+      &-titulo {
+        font-size: var(--fontS);
+        text-transform: uppercase;
+      }
+      &-link {
         font-size: 0.8rem;
-        position: absolute;
-        right: 50px;
-        bottom: 20px;
+        margin-top: 4px;
+      }
     }
-}
-.footer-container{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: flex-start;
-    justify-items: center;
-    overflow: hidden;
-}
-.footer-logo{
-    align-self: center;
-    img{
-        max-width: 300px;
-        display: block;
-        transition: transform 0.3s;
-        &:hover{
-            transform: scale(1.1)
-        }
-    }
-}
-.footer-links{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 100%; 
-    &__pagina{
-        display: flex;
-        flex-direction: column;
-        .footer-link__titulo{
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-            display: inline-block;
-        }
-    }
-}
-.footer-link{
-    text-decoration: none;
-    color: $light;
-    text-transform: uppercase;
-    padding: 5px 15px;
-    font-size: 0.7rem;
+  }
 }

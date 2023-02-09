@@ -1,129 +1,61 @@
 // Hero
-.hero-index{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-    )
-    ,url("../images/topito.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 90vh;
-    border-bottom: 2px solid $light;
-    img{
-        height: 30%;
-    }
-    h2{
-        margin-top: 20px;
-        font-size: 1.4rem;
-    }
+.hero-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacer--sm);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/topito.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  border-bottom: 2px solid var(--colorLight);
+  img {
+    max-width: 240px;
+  }
 }
 
 // Seccion Deskpads
-.seccion-deskpads{
+.seccion-inicio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  &__imagen {
+    max-width: 480px;
+    border: 1px solid var(--colorLight);
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.04);
+    }
+  }
+  &__texto {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 100px 12px;
-    border-bottom: 2px solid $light;
-    &__imagen{
-        background-image: url("../images/naaasaa.jpeg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        height: 600px;
-        width: 600px;
-        border: 1px solid $light;
-        transition: transform 0.3s;
-        &:hover{
-            transform: scale(1.1);
-        }
+    flex-direction: column;
+    max-width: 480px;
+    gap: calc(var(--spacer--sm) / 2);
+    a {
+      max-width: 120px;
+      font-size: var(--fontXS);
+      border-radius: 6px;
+      padding: 4px;
+      color: var(--colorDark);
+      background-color: var(--colorLight);
+      text-align: center;
+      transition: all 0.3s;
+      border: 1px solid var(--colorLight);
+      margin-top: 8px;
+      &:hover {
+        background: transparent;
+        color: var(--colorLight);
+        border: 1px solid var(--colorLight);
+        transform: scale(1.04);
+      }
     }
-    &__texto{
-        width: 30%;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        h2{
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-        a{
-            padding: 10px 15px;
-            width: 100px;
-            font-size: 1rem;
-            border-radius: 10px;
-            color: $dark;
-            background-color: $light;
-            margin-top: 25px;
-            text-decoration: none;
-            text-align: center;
-            transition: transform 0.3s;
-            &:hover{
-                background: transparent;
-                color: $light;
-                border: 1px solid $light;
-                transform: scale(1.1);
-            }
-        }
-    }
-}
-
-// Seccion Nosotros
-.seccion-nosotros{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 100px 12px;
-    &__imagen{
-        background-image: url("../images/teamwork.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        height: 600px;
-        width: 600px;
-        border: 1px solid $light;
-        transition: transform 0.3s;
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-    &__texto{
-        width: 30%;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        h2{
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-        a{
-            padding: 10px 15px;
-            width: 100px;
-            font-size: 1rem;
-            border-radius: 10px;
-            border: none;
-            color: $dark;
-            background-color: $light;
-            margin-top: 25px;
-            text-decoration: none;
-            text-align: center;
-            transition: transform 0.3s;
-            &:hover{
-                background: transparent;
-                color: $light;
-                border: 1px solid $light;
-                transform: scale(1.1);
-            }
-        }
-    }
+  }
 }
