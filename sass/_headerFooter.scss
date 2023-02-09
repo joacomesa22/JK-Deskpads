@@ -54,7 +54,7 @@
   justify-content: space-evenly;
   align-items: center;
   gap: var(--spacer--lg);
-  padding: var(--spacer--md);
+  padding: var(--spacer--lg);
 
   .footer-logo {
     img {
@@ -77,10 +77,22 @@
       &-titulo {
         font-size: var(--fontS);
         text-transform: uppercase;
+        margin-bottom: 4px;
+        &::after {
+          content: "";
+          display: block;
+          background: var(--colorLight);
+          height: 2px;
+          clip-path: var(--clippy);
+          transition: all 0.3s;
+        }
+        &:hover {
+          --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+        }
       }
       &-link {
         font-size: 0.8rem;
-        margin-top: 4px;
+        margin-top: 2px;
       }
     }
   }

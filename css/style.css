@@ -97,7 +97,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   gap: var(--spacer--lg);
-  padding: var(--spacer--md); }
+  padding: var(--spacer--lg); }
   .footer-container .footer-logo img {
     max-width: 300px;
     transition: all 0.3s; }
@@ -112,10 +112,20 @@ p {
       flex-direction: column; }
       .footer-container .footer-links__pagina-titulo {
         font-size: var(--fontS);
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        margin-bottom: 4px; }
+        .footer-container .footer-links__pagina-titulo::after {
+          content: "";
+          display: block;
+          background: var(--colorLight);
+          height: 2px;
+          clip-path: var(--clippy);
+          transition: all 0.3s; }
+        .footer-container .footer-links__pagina-titulo:hover {
+          --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%); }
       .footer-container .footer-links__pagina-link {
         font-size: 0.8rem;
-        margin-top: 4px; }
+        margin-top: 2px; }
 
 .hero-index {
   display: flex;
@@ -164,74 +174,39 @@ p {
         border: 1px solid var(--colorLight);
         transform: scale(1.04); }
 
-.hero-deskpads {
-  background-image: url("../images/deskpadss.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-  height: 60vh; }
-
-.seccion-shop {
+.seccion-cards {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .seccion-shop__text {
+  margin-top: calc((112.5px - var(--spacer--lg)) + var(--spacer--md));
+  gap: var(--spacer--md); }
+  .seccion-cards__text {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .seccion-shop__text h2 {
-      font-size: 5rem; }
-    .seccion-shop__text p {
-      font-size: 1.4rem; }
-
-.cards {
-  margin-top: 70px;
-  margin-bottom: 100px;
-  max-width: 90vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px; }
-
-.deskpad-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--colorLight);
-  border-radius: 15px;
-  padding: 30px 30px 20px 30px;
-  transition: transform 0.3s; }
-  .deskpad-card:hover {
-    transform: translateY(-10px); }
-  .deskpad-card__contenedor {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-  .deskpad-card__img img {
-    width: 100%;
-    border-radius: 15px; }
-  .deskpad-card__text {
-    margin-top: 2px;
-    font-size: 1.4rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between; }
-  .deskpad-card__boton {
-    padding: 8px 16px;
-    font-size: 1.2rem;
-    border-radius: 15px;
-    border: 1px solid var(--colorLight);
-    color: var(--colorLight);
-    background-color: transparent;
-    cursor: pointer;
-    margin-top: 2px;
-    text-decoration: none;
-    transition: transform 0.3s; }
-    .deskpad-card__boton:hover {
-      background: var(--colorLight);
-      color: var(--colorDark);
-      border: 1px solid var(--colorDark);
-      transform: scale(1.1); }
+    flex-direction: column; }
+  .seccion-cards__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacer--md); }
+    .seccion-cards__container .deskpad-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid var(--colorLight);
+      border-radius: 11px;
+      transition: all 0.3s;
+      cursor: pointer;
+      background-color: var(--colorDark); }
+      .seccion-cards__container .deskpad-card:hover {
+        transform: translateY(-4px);
+        opacity: 0.8; }
+      .seccion-cards__container .deskpad-card__img img {
+        width: 100%;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px; }
+      .seccion-cards__container .deskpad-card__text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 var(--spacer--sm) 6px var(--spacer--sm); }
 
 .hero-nosotros {
   display: flex;
@@ -444,12 +419,6 @@ p {
         margin-top: 20px; }
       .seccion-nosotros__texto p {
         text-align: center; }
-  .hero-deskpads {
-    background-position: center; }
-  .seccion-shop__text h2 {
-    font-size: 4rem; }
-  .cards {
-    grid-template-columns: 1fr; }
   .hero-nosotros h2 {
     font-size: 4rem;
     margin-left: 50px; }
