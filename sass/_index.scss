@@ -40,23 +40,26 @@
     flex-direction: column;
     max-width: 480px;
     gap: calc(var(--spacer--sm) / 4);
-    a {
-      max-width: 120px;
-      font-size: var(--fontXS);
-      border-radius: 6px;
-      padding: 4px;
-      color: var(--colorDark);
-      background-color: var(--colorLight);
-      text-align: center;
-      transition: all 0.3s;
-      border: 1px solid var(--colorLight);
-      margin-top: 8px;
-      &:hover {
-        background: transparent;
-        color: var(--colorLight);
-        border: 1px solid var(--colorLight);
-        transform: scale(1.04);
-      }
-    }
+  }
+}
+
+.btn {
+  max-width: 120px;
+  font-size: var(--fontXS);
+  border-radius: 6px;
+  padding: 4px;
+  color: var(--colorDark);
+  background-color: var(--colorLight);
+  text-align: center;
+  transition: all 0.3s;
+  border: 1px solid var(--colorLight);
+  margin-top: 8px;
+  font-family: var(--fontFam);
+  &:hover {
+    background: transparent;
+    color: var(--colorLight);
+    border: 1px solid var(--colorLight);
+    transform: scale(1.04);
+    cursor: pointer;
   }
 }
