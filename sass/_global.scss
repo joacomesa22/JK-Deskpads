@@ -43,3 +43,7 @@ p {
   gap: var(--spacer--lg);
   margin: var(--spacer--lg);
 }
+
+.active {
+  display: block;
+}

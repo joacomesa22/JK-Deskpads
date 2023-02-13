@@ -19,13 +19,14 @@
       }
     }
   }
-  &__label,
-  &__input {
+  &__bars {
     display: none;
+    font-size: 2rem;
   }
   &__links {
     display: flex;
     gap: var(--spacer--sm);
+    margin-top: 5px;
 
     &--link {
       font-size: var(--fontS);
@@ -69,7 +70,6 @@
   .footer-links {
     display: flex;
     gap: var(--spacer--md);
-    align-items: start;
 
     &__pagina {
       display: flex;

@@ -9,6 +9,13 @@
       name="description"
       content="Los mejores deskpads para tu escritorio! Eleva el nivel de tu setup ya sea para jugar o para trabajar."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,22 +33,22 @@
         /></a>
       </div>
 
-      <label for="menu" class="navbar__label">
-        <img src="../images/hamburguesa.svg" alt="Menu hamburguesa" />
-      </label>
-      <input type="checkbox" id="menu" class="navbar__input" />
+      <i
+        class="fa-sharp fa-solid fa-bars-staggered icon navbar__bars"
+        id="bars"
+      ></i>
 
-      <div class="navbar__links">
+      <nav class="navbar__links">
         <a href="./deskpads.html" class="navbar__links--link">Deskpads</a>
         <a href="./nosotros.html" class="navbar__links--link">Nosotros</a>
         <a
           href="https://www.instagram.com/joak.47/"
           target="_blank"
           class="navbar__links--link"
-          >Instagram</a
-        >
+          >Instagram
+        </a>
         <a href="./contacto.html" class="navbar__links--link">Contacto</a>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="seccion-formulario">
@@ -71,12 +78,13 @@
           </div>
 
           <div class="formulario__mensaje">
-            <label for="textarea">Ingrese su mensaje aquí:</label>
+            <label for="textarea">Mensaje:</label>
             <textarea
               name="mensaje"
               id="textarea"
               cols="40"
               rows="10"
+              placeholder="Ingrese su mensaje"
             ></textarea>
           </div>
 
@@ -136,5 +144,6 @@
         </div>
       </div>
     </footer>
+    <script src="../nav.js"></script>
   </body>
 </html>
