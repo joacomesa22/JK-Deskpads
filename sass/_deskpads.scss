@@ -1,8 +1,8 @@
-// Seccion Shop
+// Deskpad Cards
 .seccion-cards {
   display: flex;
   flex-direction: column;
-  margin-top: calc(
+  padding-top: calc(
     ((67px + var(--spacer--sm) * 2) - var(--spacer--lg)) + var(--spacer--sm)
   );
   gap: var(--spacer--md);
@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
   }
-  // Cards
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -22,7 +21,7 @@
       align-items: center;
       border: 2px solid var(--colorLight);
       border-radius: 11px;
-      transition: all 0.3s;
+      @include transition;
       cursor: pointer;
       background-color: var(--colorDark);
       &:hover {

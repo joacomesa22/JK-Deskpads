@@ -12,8 +12,8 @@
   background-size: cover;
   background-position: top;
   height: 100vh;
-  border-bottom: 2px solid var(--colorLight);
-  padding-top: calc(((67px + var(--spacer--sm) * 2)));
+  @include border-b;
+  @include padding-header; // Header
 
   h1 {
     margin-left: var(--spacer--lg);

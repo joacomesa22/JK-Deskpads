@@ -1,4 +1,4 @@
-// Seccion Formulario
+// Formulario + Titulo
 .seccion-formulario {
   display: flex;
   align-items: center;
@@ -14,10 +14,10 @@
   background-size: cover;
   background-position: bottom;
   height: 99vh;
-  padding-top: calc(((67px + var(--spacer--sm) * 2))); // Header
+  @include padding-header; // Header
 }
 
-// Formulario
+// Form
 .formulario {
   display: flex;
   flex-direction: column;

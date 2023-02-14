@@ -4,16 +4,16 @@
   justify-content: space-between;
   align-items: center;
   background: var(--gradient);
-  border-bottom: 2px solid var(--colorLight);
   padding: var(--spacer--sm);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
+  @include border-b;
   &__logo {
     img {
       max-width: 300px;
-      transition: all 0.3s;
+      @include transition;
       &:hover {
         transform: scale(1.04);
       }
@@ -38,7 +38,7 @@
         margin-top: 3px;
         height: 3px;
         clip-path: var(--clippy);
-        transition: all 0.3s;
+        @include transition;
       }
       &:hover {
         --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
@@ -50,7 +50,7 @@
 // Footer
 .footer-container {
   background: var(--gradient);
-  border-top: 2px solid var(--colorLight);
+  @include border-t;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -60,7 +60,7 @@
   .footer-logo {
     img {
       max-width: 300px;
-      transition: all 0.3s;
+      @include transition;
       &:hover {
         transform: scale(1.04);
       }
@@ -84,7 +84,7 @@
           background: var(--colorLight);
           height: 2px;
           clip-path: var(--clippy);
-          transition: all 0.3s;
+          @include transition;
         }
         &:hover {
           --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);

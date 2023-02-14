@@ -19,6 +19,25 @@
   --gradient: linear-gradient(45deg, #151515, #000);
 
   // Utilities
-  --transition-normal: all 250ms ease-in-out;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+// MIXINS
+
+// Borders
+@mixin border-b {
+  border-bottom: 2px solid var(--colorLight);
+}
+@mixin border-t {
+  border-top: 2px solid var(--colorLight);
+}
+
+// Padding-header
+@mixin padding-header {
+  padding-top: calc(67px + var(--spacer--sm) * 2);
+}
+
+// Transition
+@mixin transition {
+  transition: all 0.3s;
 }
