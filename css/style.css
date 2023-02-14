@@ -153,11 +153,11 @@ p {
   align-items: center; }
   .info-section__imagen {
     max-width: 480px;
-    border: 2px solid var(--colorLight);
     transition: all 0.3s; }
     .info-section__imagen:hover {
       transform: scale(1.04); }
     .info-section__imagen img {
+      border: 2px solid var(--colorLight);
       width: 100%; }
   .info-section__texto {
     display: flex;

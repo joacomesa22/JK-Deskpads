@@ -31,12 +31,12 @@
   align-items: center;
   &__imagen {
     max-width: 480px;
-    border: 2px solid var(--colorLight);
     @include transition;
     &:hover {
       transform: scale(1.04);
     }
     img {
+      border: 2px solid var(--colorLight);
       width: 100%;
     }
   }
